@@ -328,7 +328,7 @@ body {
     padding-left: 70px;
     margin-bottom: 53px;
     display: inline-block;
-    position: static;
+    position: relative;
 }
 
 .about__innovation-link::before {
