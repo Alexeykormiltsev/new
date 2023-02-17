@@ -1,0 +1,402 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul[class] {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+body {
+    line-height: 1;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.header__top {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    margin: 0 35px;
+}
+
+.header__top-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__top-item {
+    /* border-left: 1px solid #C4C4C4; */
+    padding: 0 28px;
+    position: relative;
+}
+.header__top-item::before {
+    content: "";
+    position: absolute;
+    width: 96px;
+    height: 1px;
+    top: 9px;
+    left: -48px;
+    transform: rotate(-90deg);
+    background-color: #C4C4C4;
+}
+.social::before  {
+    top: 12px;
+}
+.big::before  {
+    top: 17px;
+}
+
+
+.header__top-link {
+    font-size: 16px;
+    line-height: 19px;
+    color: #000;
+    display: block;
+}
+
+.salons {
+    position: relative;
+    padding-right: 20px;
+}
+
+.salons::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    right: -16px;
+    background-image: url(../images/icon_1.svg);
+}
+
+.visually-impaired {
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 10px 15px 8px 40px;
+    background: #00868A;
+    border: 1px solid transparent;
+    position: relative;
+}
+
+.visually-impaired::before {
+    content: "";
+    position: absolute;
+    width: 26px;
+    height: 22px;
+    top: 6px;
+    left: 10px;
+    background-image: url(../images/eye.svg);
+}
+
+.header__nav {
+    background-color: #4FBFA5;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+}
+
+.nav__item {
+    margin-left: 65px;
+}
+
+.nav__link {
+    font-size: 18px;
+    line-height: 27px;
+    color: #fff;
+
+    transition: all .3s;
+}
+
+.nav__link:hover {
+    color: #00868A;
+}
+
+.nav__btn {
+    padding: 10px 15px;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000;
+    cursor: pointer;
+    background-color: #fff;
+    border: none;
+    margin-right: 15px;
+    transition: all .3s;
+}
+
+.nav__btn:hover {
+    background-color: #00868A;
+    color: #fff;
+}
+
+.cosmetology {
+    background-color: #4FBFA5;
+}
+
+.cosmetology__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cosmetology__content {
+    margin-right: 130px;
+    width: 420px;
+}
+
+.cosmetology__title {
+    font-size: 48px;
+    line-height: 72px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.cosmetology__text {
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.cosmetology__btn {
+    padding: 15px 25px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 18px;
+    line-height: 21px;
+    cursor: pointer;
+    background-color: #00868A;
+    border: none;
+    transition: all .3s;
+}
+
+.cosmetology__btn:hover {
+    background-color: #fff;
+    color: #00868A;
+}
+
+.cosmetology__img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.cosmetology__items {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cosmetology__item {
+    margin: 0 auto;
+    background-color: #00868A;
+    padding: 24px 0;
+    /* width: 100%; */
+    text-align: center;
+    width: 326px;
+    transition: all.3s;
+}
+
+.proc {
+    width: 648px;
+}
+
+.cosmetology__link {
+    display: inline-block;
+    font-size: 21px;
+    line-height: 32px;
+    color: #fff;
+}
+
+.cosmetology__item:hover {
+    background-color: #4FBFA5;
+}
+
+.about {
+    padding: 80px 0;
+    background-color: #fff;
+    position: relative;
+}
+
+.about__inner {
+    display: flex;
+}
+
+.about__innovation {
+    background-color: #00868A;
+    width: 530px;
+    margin-right: 130px;
+    height: 100%;
+}
+
+.about__innovation-content {
+    padding: 35px 0 0 40px;
+    color: #fff;
+}
+
+.about__innovation-title {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #4FBFA5;
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.about__innovation-text {
+    font-size: 30px;
+    line-height: 45px;
+    margin-bottom: 25px;
+}
+
+.about__innovation-link {
+    color: #fff;
+    text-transform: uppercase;
+    padding-left: 70px;
+    margin-bottom: 53px;
+    display: inline-block;
+    position: static;
+}
+
+.about__innovation-link::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 50px;
+    height: 40px;
+    background-image: url(../images/next.png);
+}
+
+.about__innovation-img {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.about__estetic {
+    padding-top: 35px;
+    background-color: #fff;
+    position: relative;
+}
+
+.about__estetic-title {
+    color: #fff;
+}
+
+.about__estetic-list {
+    list-style: none;
+}
+
+.about__estetic-item {
+    font-size: 48px;
+    line-height: 72px;
+    margin-right: 20px;
+    transition: all .6s;
+    margin-bottom: 30px;
+}
+
+.about__estetic-item span {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 21px;
+    transition: all .6s;
+    position: relative;
+}
+
+.about__estetic-item:hover {
+    font-size: 96px;
+    line-height: 150%;
+    color: #00868A;
+}
+
+.about__estetic-item:hover span {
+    font-size: 28px;
+    line-height: 150%;
+}
+.about__estetic-img{
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 400px;
+    width: 306px;
+    opacity: .8;
+    display: inline-block;
+    position: absolute;
+    bottom: 150px;
+    right: 150px;
+    transition: all .6s;
+}
+
+/* .about__estetic-item:hover span::after {
+   
+} */

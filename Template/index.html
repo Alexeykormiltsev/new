@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FIGMA | Макеты для верстки — Верстка страницы</title>
+	<meta name="description" content="Макет для верстки сайта был взял с телеграм канала FIGMA | Макеты для верстки">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+		<!-- Начало: Данный блок удалять нельзя -->
+		<style>
+			.maketforfigma{
+				flex: 0 0 auto;
+				/*background: #303b44;*/
+				/*background: #5CDB95;*/
+				background: #313a46;
+				font-weight: bold;
+				display: flex;
+			}
+			.maketforfigma img{
+				border-radius: 10px;
+				margin: 4px 0 0 4px;
+			}
+			.maketforfigma p {
+				/*color: #fff;*/
+				/*color: #05386B;*/
+				color: #98a6ad;
+				text-decoration: none;
+				letter-spacing: .01875rem;
+				font-size: .775rem;
+				padding: 0 10px;
+				line-height: 0.70rem;
+			}
+
+			.maketforfigma p > a {
+				/*color: #08ff00;*/
+				/*color: #EDF5E1;*/
+				color: #bbe4f0;
+				font-weight: bold;
+			}
+			.maketforfigma p > a:hover {
+				/*color: #ffa001*/
+				/*color: #379683*/
+				color: #ffffff
+			}
+
+			.main{
+				flex: 1 0 auto;
+			}
+
+			html{
+				height: 100%;
+			}
+
+			body{
+				display: flex;
+				flex-direction: column;
+				height: 100%;
+				padding: 0;
+				margin: 0;
+			}
+		</style>
+		<div class="maketforfigma">
+			<a href="https://t.me/s/FigmaToHTML" target="_blank">
+				<img src="logo.png">
+			</a>
+			<div>
+				<p>
+					Данная верстка, была реализована пользователем в рамках обучающего телеграм канал <a href="https://t.me/s/FigmaToHTML/2" target="_blank">FIGMA | Макеты для верстки</a>
+				</p>
+				<p>
+					При помощи бота <a href="https://t.me/HtmlCodeForMoney_bot?from_git" target="_blank">FIGMA | 💵 Верстай за деньги</a> пользователь получил оплату за верстку этого сайта и попал в рейтинги сайта
+					<a href="https://maketforfigma.ru" target="_blank">FIGMA — Макеты для верстки</a>
+				</p>
+			</div>
+		</div>
+		<!-- Конец -->
+
+		<div class="main">
+			<!-- В данном блоке размещается верстка -->
+			<header class="header">
+				<div class="container">
+						<div class="header__top">
+							<a class="logo" href="#">
+								<img class="logo__img" src="images/logo.png" alt="logo">
+							</a>
+							<nav class="header__top-nav">
+								<ul class="header__top-list">
+									<li class="header__top-item">
+										<a href="tel:+71234567890" class="header__top-link">
+											+7 (123) 456 78 90
+										</a>
+									</li>
+									<li class="header__top-item">
+										<a href="#" class="header__top-link salons">
+											Наши салоны
+										</a>
+									</li>
+									<li class="header__top-item big">
+										<a href="#" class="header__top-link visually-impaired">
+											Версия для слабовидящих
+										</a>
+									</li>
+									<li class="header__top-item social">
+										<a href="#" class=" header__top-link social-link">
+											<img src="images/vk.svg" alt="social img" class="social-img">
+										</a>
+									</li>
+									<li class="header__top-item social">
+										<a href="#" class="header__top-link social-link">
+											<img src="images/youtube.svg" alt="social img" class="social-img">
+										</a>
+									</li>
+									<li class="header__top-item social">
+										<a href="#" class="header__top-link social-link">
+											<img src="images/facebook.svg" alt="social img" class="social-img">
+										</a>
+									</li>
+									<li class="header__top-item social">
+										<a href="#" class="header__top-link social-link">
+											<img src="images/instagram.svg" alt="social img" class="social-img">
+										</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+				</div>
+				<div class="header__nav">
+					<div class="container">
+						<nav class="nav">
+							<ul class="nav__list">
+								<li class="nav__item">
+									<a href="#" class="nav__link">
+										Косметология
+									</a>
+								</li>
+								<li class="nav__item">
+									<a href="#" class="nav__link">
+										Пластическая хирургия
+									</a>
+								</li>
+								<li class="nav__item">
+									<a href="#" class="nav__link">
+										Стоматология
+									</a>
+								</li>
+								<li class="nav__item">
+									<a href="#" class="nav__link">
+										Лазерная медицина
+									</a>
+								</li>
+								<li class="nav__item">
+									<a href="#" class="nav__link">
+										<a href="#" class="nav__link">
+											Контакты
+										</a>
+									</a>
+								</li>
+							</ul>
+							<button class="nav__btn">
+								Запись на прием
+							</button>
+						</nav>
+					</div>
+				</div>
+			</header>
+			<section class="cosmetology">
+				<div class="container">
+					<div class="cosmetology__inner">
+						<div class="cosmetology__content">
+							<h1 class="cosmetology__title">
+								Косметология
+							</h1>
+							<p class="cosmetology__text">
+								Современный мир диктует новые каноны жизни: ухоженное лицо и тело, стройная, подтянутая
+								фигура —
+								сегодня это неотъемлемые черты привлекательной внешности, характеризующие человека
+								благополучного и успешного.
+							</p>
+							<button class="cosmetology__btn">
+								подробнее
+							</button>
+						</div>
+						<div class="cosmetology__images">
+							<img src="images/cosmetology.jpg" alt="cosmetology img" class="cosmetology__img">
+						</div>
+					</div>
+					<div class="cosmetology__items">
+						<div class="cosmetology__item proc">
+							<a href="#" class="cosmetology__link">
+								Комплексные процедуры
+							</a>
+						</div>
+						<div class="cosmetology__item">
+							<a href="#" class="cosmetology__link">
+								Центр обучения
+							</a>
+						</div>
+						<div class="cosmetology__item">
+							<a href="#" class="cosmetology__link">
+								VIP клиентам
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="about">
+				<div class="container">
+					<div class="about__inner">
+						<div class="about__innovation">
+							<div class="about__innovation-content">
+								<h4 class="about__innovation-title">
+									Инновации
+								</h4>
+								<p class="about__innovation-text">
+									Мы практикуем новый курс процедур аппаратной косметологии
+								</p>
+								<a href="#" class="about__innovation-link">
+									Подробнее
+								</a>
+							</div>
+							<img src="images/innovations.jpg" alt="innovation img" class="about__innovation-img">
+						</div>
+						<div class="about__estetic">
+							<h4 class="about__estetic-title about__innovation-title">
+								Эстетика красоты
+							</h4>
+							<ul class="about__estetic-list">
+								<li class="about__estetic-item">
+									78 <span>
+										Современных центра <br>
+										в странах СНГ
+									</span>
+								</li>
+								<li class="about__estetic-item">
+									78 <span>
+										Современных центра <br>
+										в странах СНГ
+									</span>
+								</li>
+								<li class="about__estetic-item">
+									20 <span>
+										Уникальных патентов <br>
+										в области косметологии
+									</span>
+								</li>
+								<li class="about__estetic-item">
+									78 <span>
+										Современных центра <br>
+										в странах СНГ
+									</span>
+								</li>
+							</ul>
+						</div>
+						<img src="images/patent.png" alt="patent img" class="about__estetic-img">
+					</div>
+				</div>
+			</section>
+			<section class="news">
+	
+			</section>
+		</div>
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+		<script src="js/main.js"></script>
+</body>
+</html>
