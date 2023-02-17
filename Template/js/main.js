@@ -1,7 +1,7 @@
 $(function(){
-    $('.menu__btn').on('click', function () {
-        $('.header__menu-inner').toggleClass('header__menu-inner--active');
-        $('.menu__btn').toggleClass('menu__btn--active');
-        $('body').toggleClass('hidden');
-      });
+    // $('.news__link').on('click', function () {
+    //     $('.news__item').toggleClass('active');
+    //     // $('.menu__btn').toggleClass('menu__btn--active');
+    //     // $('body').toggleClass('hidden');
+    //   });
 });

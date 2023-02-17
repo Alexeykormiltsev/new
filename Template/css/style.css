@@ -87,6 +87,7 @@ body {
     padding: 0 28px;
     position: relative;
 }
+
 .header__top-item::before {
     content: "";
     position: absolute;
@@ -97,10 +98,12 @@ body {
     transform: rotate(-90deg);
     background-color: #C4C4C4;
 }
-.social::before  {
+
+.social::before {
     top: 12px;
 }
-.big::before  {
+
+.big::before {
     top: 17px;
 }
 
@@ -285,11 +288,11 @@ body {
 .about {
     padding: 80px 0;
     background-color: #fff;
-    position: relative;
 }
 
 .about__inner {
     display: flex;
+    position: relative;
 }
 
 .about__innovation {
@@ -384,7 +387,8 @@ body {
     font-size: 28px;
     line-height: 150%;
 }
-.about__estetic-img{
+
+.about__estetic-img {
     background-repeat: no-repeat;
     background-size: contain;
     height: 400px;
@@ -392,11 +396,94 @@ body {
     opacity: .8;
     display: inline-block;
     position: absolute;
-    bottom: 150px;
-    right: 150px;
-    transition: all .6s;
+    bottom: 70px;
+    right: 0;
 }
 
-/* .about__estetic-item:hover span::after {
-   
+.news {
+    background-color: #fff;
+    margin-bottom: 100px;
+}
+
+.news__inner {
+    display: flex;
+}
+
+.news__links {
+    padding-top: 35px;
+    background-color: #4FBFA5;
+    color: #fff;
+    min-width: 530px;
+    width: 530px;
+}
+
+.news__links-title {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #00868A;
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 21px;
+    margin-left: 40px;
+}
+
+.news__item {
+    padding: 20px 40px;
+    transition: all .3s;
+}
+
+.news__item:hover {
+    background-color: #00868A;
+}
+
+/* каломбур конечно, но с функциями пока не дружу,
+js только начал учить, хотелось бы цвет и текст уметь поменять при наведении и при клике */
+.active {
+    background-color: #00868A;
+}
+
+.news__link {
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    line-height: 21px;
+    margin: 35px 0;
+}
+
+.news__detailed {
+    padding: 35px 0 0 60px;
+    background-color: #E6F3F3;
+}
+
+.news__detailed-title {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 25px;
+}
+
+/* .news__detailed-list {
+    list-style: disc;
+} */
+
+.news__detailed-item {
+    margin-bottom: 30px;
+    margin-right: 60px;
+}
+
+.news__detailed-text {
+    padding-left: 20px;
+    position: relative;
+    font-size: 14px;
+    line-height: 150%;
+    color: #000;
+}
+
+/* .news__detailed-text::before {
+    content: "";
+    position: absolute;
+    width: 770px;
+    height: 504px;
+    left: 0;
+    top: 0;
+    color: #00868A;
 } */
