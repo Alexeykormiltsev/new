@@ -1,7 +1,10 @@
-$(function(){
-    // $('.news__link').on('click', function () {
-    //     $('.news__item').toggleClass('active');
-    //     // $('.menu__btn').toggleClass('menu__btn--active');
-    //     // $('body').toggleClass('hidden');
-    //   });
+$(function () {
+    $('.slider').slick({
+        dots: false,
+        speed: 700,
+
+        prevArrow: '<button type="button" class="slick-prev"><img src="images/arrow-left.svg" alt="arrow-left"></button>',
+
+        nextArrow: '<button type="button" class="slick-next"><img src="images/arrow-right.svg" alt="arrow-right"></button>',
+    });
 });

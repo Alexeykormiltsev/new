@@ -205,6 +205,24 @@ body {
     color: #fff;
 }
 
+.slick-prev,
+.slick-next {
+    position: absolute ;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.slick-next {
+    left: 420px;
+    top: 420px;
+}
+
+.slick-prev {
+    left: 360px;
+    bottom: 54px;
+}
+
 .cosmetology {
     background-color: #4FBFA5;
 }
