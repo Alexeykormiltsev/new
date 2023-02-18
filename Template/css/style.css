@@ -52,10 +52,29 @@ select {
     font: inherit;
 }
 
+@font-face {
+    font-family: Gilroy-Bold;
+    font-style: normal;
+    font-weight: bold;
+    src: url(../fonts/Gilroy-Bold.woff2) format('woff2'),
+        url(../fonts/Gilroy-Bold.woff) format('woff');
+        
+    font-family: Gilroy-Medium;
+    font-style: normal;
+    font-weight: bold;
+    src: url(../fonts/Gilroy-Medium.woff2) format('woff2'),
+        url(../fonts/Gilroy-Medium.woff) format('woff');
+
+    font-family: Gilroy-Regular;
+    font-style: normal;
+    font-weight: bold;
+    src: url(../fonts/Gilroy-Regular.woff2) format('woff2'),
+        url(../fonts/Gilroy-Regular.woff) format('woff');
+}
+
 body {
     line-height: 1;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
+    font-family: Gilroy-Medium;
 }
 
 .container {
@@ -207,7 +226,7 @@ body {
 
 .slick-prev,
 .slick-next {
-    position: absolute ;
+    position: absolute;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -221,6 +240,7 @@ body {
 .slick-prev {
     left: 360px;
     bottom: 54px;
+    z-index: 1;
 }
 
 .cosmetology {
@@ -241,7 +261,7 @@ body {
 .cosmetology__title {
     font-size: 48px;
     line-height: 72px;
-    font-weight: 700;
+    font-family: Gilroy-Bold;
     color: #fff;
     margin-bottom: 20px;
 }
@@ -515,7 +535,7 @@ js только начал учить, хотелось бы цвет и тек�
 
 .product__title {
     text-align: center;
-    font-weight: 700;
+    font-family: Gilroy-Bold;
     font-size: 48px;
     line-height: 72px;
     color: #00868A;
@@ -559,7 +579,7 @@ js только начал учить, хотелось бы цвет и тек�
 }
 
 .box-title {
-    font-weight: 700;
+    font-family: Gilroy-Bold;
     font-size: 21px;
     line-height: 32px;
     color: #fff;
@@ -582,7 +602,7 @@ js только начал учить, хотелось бы цвет и тек�
 }
 
 .footer__top-item--title {
-    font-weight: 700;
+    font-family: Gilroy-Bold;
     font-size: 21px;
     line-height: 32px;
     margin-bottom: 20px;
@@ -625,7 +645,7 @@ js только начал учить, хотелось бы цвет и тек�
 
 .contacts__link,
 .addres {
-    font-weight: 700;
+    font-family: Gilroy-Bold;
     font-size: 21px;
     line-height: 32px;
     color: #000;
@@ -672,7 +692,7 @@ js только начал учить, хотелось бы цвет и тек�
 
 .footer__bottom-copy,
 .footer__bottom-copy--link {
-    font-weight: 400;
+    font-family: Gilroy-Regular;
     font-size: 12px;
     line-height: 18px;
     color: #000;
