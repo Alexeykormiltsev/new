@@ -136,9 +136,14 @@ body {
     text-transform: uppercase;
     color: #fff;
     padding: 10px 15px 8px 40px;
-    background: #00868A;
+    background-color: #00868A;
     border: 1px solid transparent;
     position: relative;
+    transition: all .3s;
+}
+
+.visually-impaired:hover {
+    background-color: #4FBFA5;
 }
 
 .visually-impaired::before {
@@ -402,7 +407,7 @@ body {
 
 .news {
     background-color: #fff;
-    margin-bottom: 100px;
+    padding-bottom: 100px;
 }
 
 .news__inner {
@@ -429,7 +434,7 @@ body {
 
 .news__item {
     padding: 20px 40px;
-    transition: all .3s;
+    transition: all .6s;
 }
 
 .news__item:hover {
@@ -461,10 +466,6 @@ js только начал учить, хотелось бы цвет и тек�
     margin-bottom: 25px;
 }
 
-/* .news__detailed-list {
-    list-style: disc;
-} */
-
 .news__detailed-item {
     margin-bottom: 30px;
     margin-right: 60px;
@@ -478,12 +479,193 @@ js только начал учить, хотелось бы цвет и тек�
     color: #000;
 }
 
-/* .news__detailed-text::before {
+.news__detailed-text::before {
     content: "";
     position: absolute;
-    width: 770px;
-    height: 504px;
+    width: 6px;
+    height: 6px;
     left: 0;
-    top: 0;
+    top: 6px;
+    border-radius: 2px;
+    background-color: #00868A;
+}
+
+.product {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.product__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 72px;
     color: #00868A;
-} */
+    margin-bottom: 60px;
+}
+
+.product__items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product__item {
+    max-width: 306px;
+    position: relative;
+}
+
+.product__item-link {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    padding: 10px 15px;
+    background-color: #4FBFA5;
+    border: 1px solid transparent;
+    color: #fff;
+    font-size: 18px;
+    line-height: 21px;
+    transition: all .3s;
+}
+
+.product__item-link:hover {
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+.product__item-box {
+    padding: 25px 30px;
+    background-color: #00868A;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box-title {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 32px;
+    color: #fff;
+}
+
+.footer {
+    background-color: #fff;
+}
+
+.footer__top {
+    padding-bottom: 80px;
+    display: flex;
+}
+
+.footer__top-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 190px;
+    grid-row-gap: 30px;
+}
+
+.footer__top-item--title {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 32px;
+    margin-bottom: 20px;
+}
+
+.footer__top-list--item {
+    margin-bottom: 15px;
+}
+
+.footer__top-list--link {
+    font-size: 14px;
+    line-height: 21px;
+    color: #000;
+    transition: all .3s;
+}
+
+.footer__top-list--link:hover {
+    color: #4FBFA5;
+    border-bottom: 1px solid #4FBFA5;
+}
+
+.footer__top-contacts {
+    margin-left: 130px;
+    padding-top: 15px;
+}
+
+.contacts {
+    margin-bottom: 30px;
+}
+
+.contacts__title {
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #000000;
+    opacity: 0.5;
+    margin-bottom: 10px;
+}
+
+.contacts__link,
+.addres {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 32px;
+    color: #000;
+}
+
+.contacts__link {
+    transition: all .3s;
+}
+
+.addres {
+    margin-bottom: 30px;
+}
+
+.contacts__link:hover {
+    font-size: 24px;
+    color: #4FBFA5;
+}
+
+.addres__link {
+    padding: 15px 25px;
+    color: #fff;
+    background-color: #00868A;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    transition: all .3s;
+}
+
+.addres__link:hover {
+    /* color: #00868A; */
+    background-color: #4FBFA5;
+    border: 1px solid #00868A;
+    padding: 15px 30px;
+}
+
+.footer__bottom {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    border-top: 1px solid #C4C4C4;
+}
+
+.footer__bottom-copy,
+.footer__bottom-copy--link {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000;
+}
+
+.footer__bottom-copy--link {
+    text-decoration: underline;
+    margin: 0 70px;
+}
+
+.footer__bottom-copy {
+    /* max-width: 300px; */
+    margin-left: 6px;
+}
