@@ -720,6 +720,16 @@ js только начал учить, хотелось бы цвет и тек�
     .slick-prev {
         top: 80%;
     }
+
+    .product__item {
+        max-width: 290px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .product__item {
+        max-width: 250px;
+    }
 }
 
 @media (max-width: 1160px) {
@@ -829,6 +839,56 @@ js только начал учить, хотелось бы цвет и тек�
 
     .about__estetic {
         margin-left: 30px;
+    }
+
+    .news {
+        padding-bottom: 20px;
+    }
+
+    .news__inner {
+        flex-direction: column;
+    }
+
+    .news__links {
+        width: 100%;
+    }
+
+    .product {
+        padding: 20px 0;
+    }
+
+    .product__items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+
+    .product__item {
+        max-width: 100%;
+    }
+
+    .product__item-img {
+        width: 100%;
+    }
+    .footer__top{
+        padding-bottom: 20px;
+        flex-wrap: wrap;
+    }
+    .footer__top-contacts{
+        margin-left: 40px;
+        padding-top: 30px;
+    }
+    .footer__bottom{
+        flex-direction: column-reverse;
+    }
+    .footer .social{
+        display: block;
+    }
+    .footer .header__top-nav{
+        margin-bottom: 30px;
+    }
+    .footer__bottom-copy--link{
+        margin-bottom: 15px;
     }
 }
 
@@ -1004,6 +1064,10 @@ js только начал учить, хотелось бы цвет и тек�
         margin-bottom: 12px;
     }
 
+    .about {
+        padding: 20px 0;
+    }
+
     .about__estetic-img {
         opacity: 1;
     }
@@ -1023,27 +1087,82 @@ js только начал учить, хотелось бы цвет и тек�
         font-size: 16px;
         line-height: 21px;
     }
+
+    .news {
+        padding-bottom: 20px;
+    }
+
+    .news__item {
+        padding: 10px 20px;
+        margin: 8px 10px;
+        border-radius: 8px;
+    }
+
+    .news__links {
+        text-align: center;
+        min-width: 100%;
+    }
+
+    .news__links-title {
+        margin-left: 0;
+        margin-bottom: 20px;
+        border-radius: 4px;
+    }
+
+    .news__link {
+        margin: 15px 0;
+    }
+
+    .news__detailed {
+        padding-left: 15px;
+    }
+
+    .product {
+        padding: 20px 0;
+    }
+    .product__title{
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    .footer__top-items{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
 }
-@media (max-width: 670px){
-    .about__estetic-img{
+
+@media (max-width: 670px) {
+    .about__estetic-img {
         position: static;
         width: 100%;
         height: 100%;
     }
-    .about__estetic{
+
+    .about__estetic {
         margin: 0 auto;
     }
-    .about__estetic-item{
+
+    .about__estetic-item {
         width: 100%;
         margin-bottom: 15px;
     }
-    .about__estetic-item span{
+
+    .about__estetic-item span {
         display: block;
     }
-    .about__estetic-title{
-       text-align: center;
+
+    .about__estetic-title {
+        text-align: center;
+    }
+
+    .product__items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer__top-contacts{
+        margin-left: 8px;
+        padding-top: 20px;
     }
 }
+
 @media (max-width: 430px) {
     .visually-impaired {
         font-size: 15px;
