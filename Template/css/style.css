@@ -107,7 +107,6 @@ body {
 }
 
 .header__top-item {
-    /* border-left: 1px solid #C4C4C4; */
     padding: 0 28px;
     position: relative;
 }
@@ -298,7 +297,6 @@ body {
 }
 
 .cosmetology__items {
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -308,7 +306,6 @@ body {
     margin: 0 auto;
     background-color: #00868A;
     padding: 24px 0;
-    /* width: 100%; */
     text-align: center;
     width: 326px;
     transition: all.3s;
@@ -390,6 +387,9 @@ body {
     background-size: contain;
     background-position: center center;
 }
+
+
+/* честно говоря не совсем понял как реализовать этот блок .about__estetic */
 
 .about__estetic {
     padding-top: 35px;
@@ -705,13 +705,61 @@ js только начал учить, хотелось бы цвет и тек�
 }
 
 .footer__bottom-copy {
-    /* max-width: 300px; */
     margin-left: 6px;
+}
+
+
+.footer__nav {
+    display: flex;
+    align-items: center;
+}
+
+.footer__bottom-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__nav-item,
+.footer__bottom-item {
+    padding: 0 28px;
+    position: relative;
+}
+
+.footer__bottom-item::before {
+    content: "";
+    position: absolute;
+    width: 96px;
+    height: 1px;
+    top: 12px;
+    left: -48px;
+    transform: rotate(-90deg);
+    background-color: #C4C4C4;
+}
+
+.footer__nav-item::before {
+    content: "";
+    position: absolute;
+    width: 96px;
+    height: 1px;
+    top: 12px;
+    left: -48px;
+    transform: rotate(-90deg);
+    background-color: #C4C4C4;
+}
+
+.footer__top-link {
+    font-size: 16px;
+    line-height: 19px;
+    color: #000;
+    display: block;
 }
 
 
 @media (max-width: 1290px) {
 
+    .footer__nav-item,
+    .footer__bottom-item,
     .header__top-item {
         padding: 0 20px;
     }
@@ -730,6 +778,10 @@ js только начал учить, хотелось бы цвет и тек�
     .product__item {
         max-width: 250px;
     }
+
+    .footer__bottom-copy--link {
+        margin: 0 40px;
+    }
 }
 
 @media (max-width: 1160px) {
@@ -737,8 +789,14 @@ js только начал учить, хотелось бы цвет и тек�
         justify-content: space-between;
     }
 
+    .footer__nav-item,
+    .footer__bottom-item,
     .header__top-item {
         padding: 0 15px;
+    }
+
+    .footer__bottom-copy--link {
+        margin: 0 25px;
     }
 
     .salons::after {
@@ -817,6 +875,7 @@ js только начал учить, хотелось бы цвет и тек�
         width: 100%;
         min-height: 220px;
         height: auto;
+        object-fit: cover;
     }
 
     .about__innovation-text {
@@ -870,24 +929,38 @@ js только начал учить, хотелось бы цвет и тек�
     .product__item-img {
         width: 100%;
     }
-    .footer__top{
+
+    .footer__top {
         padding-bottom: 20px;
         flex-wrap: wrap;
     }
-    .footer__top-contacts{
+
+    .footer__top-contacts {
         margin-left: 40px;
         padding-top: 30px;
     }
-    .footer__bottom{
+
+    .footer__bottom {
         flex-direction: column-reverse;
     }
-    .footer .social{
-        display: block;
-    }
-    .footer .header__top-nav{
+
+    .footer__bottom-nav {
         margin-bottom: 30px;
     }
-    .footer__bottom-copy--link{
+
+    .footer__nav-item::before {
+        background-color: transparent;
+    }
+
+    .footer__bottom-item {
+        display: block;
+    }
+
+    .footer__bottom-item::before {
+        background-color: transparent;
+    }
+
+    .footer__bottom-copy--link {
         margin-bottom: 15px;
     }
 }
@@ -978,13 +1051,13 @@ js только начал учить, хотелось бы цвет и тек�
 
     .header__top-nav--active,
     .header__nav--active {
-        transform: translateY(100%);
-        opacity: 1;
+        transform: translateY(80%);
+        z-index: 2;
     }
 
     .header__top-nav--active {
         background-color: #fff;
-        padding-top: 40px;
+        padding-top: 10px;
     }
 
     .header__top-list {
@@ -996,8 +1069,12 @@ js только начал учить, хотелось бы цвет и тек�
         flex-direction: column;
     }
 
+    .nav {
+        padding: 0 0 44px;
+    }
+
     .header__top-link {
-        margin-bottom: 40px;
+        margin-bottom: 30px;
         font-size: 20px;
     }
 
@@ -1120,13 +1197,19 @@ js только начал учить, хотелось бы цвет и тек�
     .product {
         padding: 20px 0;
     }
-    .product__title{
+
+    .product__title {
         font-size: 36px;
         margin-bottom: 20px;
     }
-    .footer__top-items{
+
+    .footer__top-items {
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 30px;
+    }
+
+    .addres__link {
+        border-radius: 8px;
     }
 }
 
@@ -1144,10 +1227,17 @@ js только начал учить, хотелось бы цвет и тек�
     .about__estetic-item {
         width: 100%;
         margin-bottom: 15px;
+        font-size: 36px;
+        line-height: 48px;
     }
 
     .about__estetic-item span {
         display: block;
+        width: 100%;
+    }
+
+    .about__estetic-item br {
+        display: none;
     }
 
     .about__estetic-title {
@@ -1157,15 +1247,26 @@ js только начал учить, хотелось бы цвет и тек�
     .product__items {
         grid-template-columns: repeat(1, 1fr);
     }
-    .footer__top-contacts{
+
+    .footer__top-contacts {
         margin-left: 8px;
         padding-top: 20px;
+    }
+
+    .footer__nav {
+        flex-direction: column;
+        gap: 25px;
     }
 }
 
 @media (max-width: 430px) {
     .visually-impaired {
         font-size: 15px;
+    }
+
+    .footer__nav-item {
+        padding: 0;
+        font-size: 14px;
     }
 
     .nav__btn {

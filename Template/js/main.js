@@ -4,15 +4,15 @@ $(function () {
         $('.header__nav').toggleClass('header__nav--active');
         $('.menu__btn').toggleClass('menu__btn--active');
         $('body').toggleClass('hidden');
-        $('.main').toggleClass('main--active');
-      });
+
+    });
 
 
 
     $('.slider').slick({
         dots: false,
         autoplay: true,
-        autoplaySpeed: 7000,
+        autoplaySpeed: 5000,
         speed: 1200,
 
         prevArrow: '<button type="button" class="slick-prev"><img src="images/arrow-left.svg" alt="arrow-left"></button>',
